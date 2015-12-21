@@ -27,12 +27,7 @@ button {
     border-radius: 100%;
     border: 1px solid black;
     background-color: white;
-}
-.prev {
-    float: left;
-}
-.next {
-    float: right;
+    margin: 10px;
 }
 .person {
     font: bold 26px/28px sans-serif;
