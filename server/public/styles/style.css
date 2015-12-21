@@ -14,3 +14,33 @@
 .person-shoutout {
     height: 200px;
 }
+#peopleContainer, #buttonContainer {
+    text-align: center;
+}
+#peopleContainer {
+    border: 1px solid black;
+    margin: 5px;
+}
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-color: white;
+}
+.prev {
+    float: left;
+}
+.next {
+    float: right;
+}
+.person {
+    font: bold 26px/28px sans-serif;
+}
+.location {
+    font-family: sans-serif;
+}
+.animal {
+    font: 20px/22px sans-serif;
+    letter-spacing: 2px;
+}

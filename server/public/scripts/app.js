@@ -58,7 +58,7 @@ function prevPerson() {
 function putStuffIn(data){
 
     for(var i = 0; i < theta.length; i++) {
-        $('#peopleContainer').append('<div class="person-container"' + i + '">');
+        $('#peopleContainer').append('<div class="person-container' + i + '"></div>');
         var person = theta[i].name;
         var location = theta[i].location;
         var animal = theta[i].animal;
@@ -70,7 +70,8 @@ function putStuffIn(data){
 // fade in and out
 function fades() {
     for(var i = 0; i < theta.length; i++) {
-        $('.person-container' + i).fadeOut();
+            $('.person-container' + i).fadeOut();
+
 
         if(i == personTracker) {
             $('.person-container' + i).fadeIn();
@@ -80,10 +81,12 @@ function fades() {
 
 // attempt to clear dom for next person
 function clearContainer() {
-    //$('#peopleContainer').text(theta[personTracker]);
+
+
     for(var i = 0; i < theta.length; i++){
         if(i != personTracker){
             $('.person-container' + i).hide();
+
         }
     }
 }
